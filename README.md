@@ -12,27 +12,13 @@ The paper that inspired this research: https://www.sciencedirect.com/science/art
 
 A very special thank you to Dr. Matthew Jones-Rhoades and Dr. Ole Foresberg.
 
-DSCAM folder contains folders of each order of insects present in the research.
-There is also a fifth folder, called "Allseqs," that contains the combination
-of all orders. Within each of these folders is another set of folders - one for
-the plots of the data, and one for the text files of all the data. 
-
-The "Writeup" folder contains a paper, presentation, and outline of the work that
-has been accomplished relevant to this research. If you're unclear of what exactly
-was done in this research, you'll likely find answers there.
-
-The "Programs" folder contains the relevant Python programs used in constructing
-the data found in the research.
-
-The program used to construct these data from the sequences is the noisefinder.py 
+The program used to construct these data from the sequences is the noisefinder2.py 
 program. You'll find documentation for the program within the source code or
-by running the program with the argument <-h>. The seqfinder program takes a fasta
-file and a start and stop position and returns the sequence including and between
-those two positions, and the concatty program concatenates as many files as
-necessary into one .fasta (or whatever file type you prefer) for use in MEGA7.
+by running the program with the argument <-h>.
 
-There are alignment files in some of the order directories - these can be opened
-and manipulated via the MEGA program.
+Plotter.R takes the output of Noisefinder and plots it, surprisingly enough.
+This allows you to observe highly conserved regions located by
+Noisefinder.
 
 All of these files and data are yours to manipulate, under the condition that any
 notable findings are relayed to me, and that I am credited in any publication
