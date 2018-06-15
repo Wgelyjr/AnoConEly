@@ -29,6 +29,10 @@ a bunch of modules tacked onto it that plot the tables and organize the resultin
 pngs and csvs into their own folders. Get familiar with 2 before you experiment 
 with 3, especially if you're just here to dissect the source code. :)
 
+The .fasta files included here are the DSCAM genes of a number of insects. They have
+a number of regions that are highly conserved; the purpose of said regions will become
+very clear after reading the paper by Dr. Brenton Graveley, linked above.
+
 All of these files and data are yours to manipulate, but hopefully you'll help me
 perfect this script and let me know about anything interesting you find!
 
