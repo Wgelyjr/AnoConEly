@@ -15,6 +15,14 @@ The program used to construct these data from the sequences is the Noisefinder
 program. You'll find documentation for the program within the source code or
 by running the program with the argument <-h>...
 
+The gist is you go to your directory that contains the .fasta files you want to
+analyze in cmd. Then, for example:
+
+Noisefinder2.py testgene.fasta testgene2.fasta testgene3.fasta
+
+In the same directory, the files containing the data (one for each analyzed file)
+will be generated.
+
 There are two versions of Noisefinder - 2 and 3. 2 is far more lightweight, and 
 only spits out tables of data in the directory it was pathed to, while 3 has
 a bunch of modules tacked onto it that plot the tables and organize the resulting
