@@ -1,8 +1,8 @@
 import os
 import sys
 #Organizes output files into folders.
-def swap():
-	olddir = os.path.dirname(os.path.realpath(sys.argv[1]))
+def swap(filelist):
+	olddir = os.path.dirname(os.path.realpath(filelist[0]))
 	dirlist = os.listdir()
 	csvlist = []
 	pnglist = []

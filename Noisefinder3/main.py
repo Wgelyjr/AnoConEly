@@ -20,13 +20,7 @@
 |   along with this program.  If not, see <https://www.gnu.org/licenses/>.		|
 |																				|
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-import timekeep
-import readfasta
 import sys
-import pandaplotter
-import dirchanger
-stt = timekeep.start()
-#Help documentation
 if len(sys.argv) <= 1:
 	print("Not enough arguments - input -h for help.")
 	quit()
@@ -40,6 +34,12 @@ elif sys.argv[1] == "-h":
 	print("Resolution (blocksize) can be changed by the argument <-blocksize n>,")
 	print("n being the desired blocksize.")
 	quit()
+	
+import timekeep
+import readfasta
+import pandaplotter
+import dirchanger
+stt = timekeep.start()
 
 #Change blocksize to adjust signal/noise ratio. Higher blocksize = weaker signal,
 #but with a higher significance in found signal. Changed via <-blocksize int> argv.
@@ -56,7 +56,7 @@ fileiter = 0 #protects from out-of-bounds error during name testing
 print("Parsing files. . .")
 for i in range(1,len(sys.argv)):
 	targfile = sys.argv[i]
-	if targfile == "-blocksize": #Checks targfile for validity as a filename
+	if targfile == "-blocksize": #searches for non fasta input
 		blocksize = int(sys.argv[i+1])
 		print("Blocksize altered; New value = " + str(blocksize))
 		i += 2
@@ -109,7 +109,7 @@ try:
   pandaplotter.pdplt()
   print("Data plotted.")
 except ImportError:
-  print("Data could not be plotted. Install Matplotlib and Pandas module.")
+  print("Data could not be plotted. Install Matplotlib and Pandas modules.")
 print("Organizing files. . .")
-dirchanger.swap()
+dirchanger.swap(filelist)
 print("Complete.")
