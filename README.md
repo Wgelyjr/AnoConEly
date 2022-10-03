@@ -1,9 +1,13 @@
 # AnoConEly
 Analysis of Conservation within Insect Dscam Genes
 
+___
+
 Preface from several years later...
 
 I've learned a lot of Python since this first real project. I also took this project and its 'documentation' very seriously, as that's what I was encouraged to do by my professors. Keep that in mind as you read!
+
+___
 
 DSCAM research by Liam Ely
 Contact at Wgely(at)knox.edu
